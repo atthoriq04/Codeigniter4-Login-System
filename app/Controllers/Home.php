@@ -85,7 +85,7 @@ class Home extends BaseController
 			echo view('Menu/Adduser', $data);
 		} else {
 			return redirect()->to('/Home/');
-		}
+		}}
 	}
 	public function Editname($id)
 	{
@@ -112,6 +112,6 @@ class Home extends BaseController
 			echo view('Menu/Edit', $data);
 		} else {
 			return redirect()->to('/Home/');
-		}
+		}}
 	}
 }
