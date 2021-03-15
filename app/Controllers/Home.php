@@ -64,6 +64,9 @@ class Home extends BaseController
 	}
 	public function Adduser()
 	{
+		if (session('Username') == null) {
+			return redirect()->to('/Login');
+		} else {
 		$name = $_SESSION['Username'];
 		$Role = $_SESSION['Roleid'];
 
@@ -86,6 +89,9 @@ class Home extends BaseController
 	}
 	public function Editname($id)
 	{
+		if (session('Username') == null) {
+			return redirect()->to('/Login');
+		} else {
 		$name = $_SESSION['Username'];
 		$Role = $_SESSION['Roleid'];
 
