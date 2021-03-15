@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 08, 2021 at 11:48 AM
+-- Generation Time: Mar 15, 2021 at 10:36 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -100,8 +100,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`Userid`, `Username`, `Userpassword`, `Roleid`) VALUES
-(2, 'user', '$2y$10$6kSRGi4Y8qu5saOWrV6eh.v4GJNeX35iiZ.3fCUgjGF76lpjAXDs6', 2),
-(3, 'Admin', '$2y$10$6kSRGi4Y8qu5saOWrV6eh.v4GJNeX35iiZ.3fCUgjGF76lpjAXDs6', 1);
+(3, 'Admin', '$2y$10$6kSRGi4Y8qu5saOWrV6eh.v4GJNeX35iiZ.3fCUgjGF76lpjAXDs6', 1),
+(11, 'User', '$2y$10$Qynmp6hQLYl63D4eMyXR9uuLgHErOy8P4aMib9wE1S3Lk9c44oM2i', 2),
+(12, 'Admin2', '$2y$10$Qc7CplNio7ywz1SOwl0P9emoPh17gNA8qP.WzGzPSQlp24mvSuGj.', 1),
+(13, 'user2', '$2y$10$QFmRPUGkP9icbLAVLQUi6ex7RtJ2tXBth/4/Bh10iX4kMzEEwzxzK', 2);
 
 --
 -- Indexes for dumped tables
@@ -157,7 +159,7 @@ ALTER TABLE `role_module`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `Userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
